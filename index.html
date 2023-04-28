@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garfield vs Veggies</title>
+    <link rel="icon" type="image/x-icon" href="docs/assets/img/Garfield_the_Cat.svg.png">
+    <link rel="stylesheet" href="docs/styles/styles.css" />
+  </head>
+  <body>
+    <h1><em><span id="garfield-text">Garfield</span> VS <span id="veggies-text">Veggies</span></em></h1>
+    <div id="pontuation">
+      <p class="score-text" id="score-id">Score: <span id="score">0</span></p>
+      <p class="score-text" id="highScore">High Score: <span id="HighScore">0</span></p>
+    </div>
+    <div id="instructions">
+        <h2>Help Garfield!</h2>
+        <p>Garfield got lost and he is very hungry but..... there's a catch, he is being offered veggies.. </p>
+        <p id="bold-text">Don't let Garfield eat the veggies or he will get sick!</p>
+        <p>Be careful - the more Garfield eats, the faster he gets!</p>
+        
+        <div id="images">
+          <div id="good-food">
+            <p>Good Food:</p>
+            <img class="food" src="docs/assets/img/food.png" alt="lasagna">
+            <img class="food" src="docs/assets/img/chips.png" alt="chips">
+            <img class="food" src="docs/assets/img/meatballs.png" alt="meatballs">
+          </div>
+          <div id="bad-food">
+            <p>Bad Food:</p>
+            <img class="veggie" src="docs/assets/img/veggie.png" alt="veggies">
+            <img class="food2" src="docs/assets/img/broccoli.png" alt="broccoli">
+            <img class="food3" src="docs/assets/img/salad.png" alt="salad">
+          </div>
+        </div>
+        <hr>
+        <img id="keyboard-img" src="docs/assets/img/keyboard.png" alt="keyboard">
+    </div>
+    <canvas id="canvas" width="700" height="500"></canvas>
+    <img id="background-garfield" src="docs/assets/img/background3.png" alt="Garfield">
+    <div>
+      <button id="mute"><img id="mute-img" src="docs/assets/img/mute.png" alt="mute"></button>
+    </div>
+    <div id="start">
+      <p id="space-to-start">Press </p>
+      <img id="space-img" src="docs/assets/img/space.png" alt="">  
+      <p id="space-to-start"> to Start</p>  
+    </div>
+    <script src="docs/scripts/components.js"></script>
+    <script src="docs/scripts/game.js"></script>
+    <script src="docs/scripts/index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: "Patrick Hand";
+  background-image: linear-gradient(to right top, #ffa500, #ffa200, #ff9f00, #ff9b00, #ff9800, #ff9500, #ff9200, #ff8f00, #ff8c00, #ff8800, #fe8500, #fe8101);  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: inherit;
+  background-position: 95% 50%;
+  overflow: hidden;
+}
+
+  #veggies-text{
+    color: green;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.339);
+  }
+  #garfield-text{
+    color: #FC0300;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.339);
+  }
+  h1 {
+    color: #ffd9ff;
+    font-size: 56px;
+    text-align: center;
+    margin-top: 1%;
+  }
+
+  h2{
+    margin: 10px 0 0 0;
+  }
+  
+  .score-text {
+    text-align: center;
+    color: #ffd9ff;
+    font-size: 2vw;
+    margin: -2% 0% 0% 0%;
+  }
+
+  #pontuation{
+    display: flex;
+    justify-content: center;
+    column-gap: 23%;
+    margin:6vh 0vh 2vh 0vh;
+
+  }
+
+  #score-id{
+    padding-left: 5%;
+  }
+  
+  canvas {
+    background: #ead5a4;
+    display: block;
+    margin: 0% 0% 1% 29%;
+    cursor: none;
+    
+    background: radial-gradient(circle at 100% 100%, #ead5a4 0, #ead5a4 5px, transparent 5px) 0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #ead5a4 0, #ead5a4 5px, transparent 5px) 100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #ead5a4 0, #ead5a4 5px, transparent 5px) 0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #ead5a4 0, #ead5a4 5px, transparent 5px) 100% 100%/10px 10px no-repeat,
+    linear-gradient(#ead5a4, #ead5a4) 50% 50%/calc(100% - 10px) calc(100% - 20px) no-repeat,
+    linear-gradient(#ead5a4, #ead5a4) 50% 50%/calc(100% - 20px) calc(100% - 10px) no-repeat,
+    linear-gradient(46deg, #e63030 21%, #FE8101 53%, #FFDF14 73%);
+
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;  
+  }
+  
+  #start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #space-to-start{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  #instructions{
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 26%;
+    margin:0vw 0vw 0vw 0.8vw;
+    padding:0vw 0.7vw 0vw 1vw;
+    letter-spacing: 0.5px;
+    word-spacing:2px;
+    position: absolute;
+    top: 3%; /*change for the presentation to 7%*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-image: linear-gradient(to left bottom, #f29309, #f69d07, #f9a606, #fcb007, #ffba09);  
+  }
+  #background-garfield {
+    position: absolute;
+    top: 30%;
+    left: 72%;
+    width: 28vw;
+    user-select:none;
+    pointer-events:none;
+  }
+
+  #keyboard-img{
+    width: 50%;
+    padding: 0% 0% 0% 0%;
+
+    user-select:none;
+    pointer-events:none
+  }
+
+  #images{
+    display: flex;
+    flex-direction: row;
+    user-select:none;
+    pointer-events:none
+    
+  }
+
+  .food{
+    width: 90%;
+  }
+  .veggie{
+    width: 22%;
+  }
+
+  .food2{
+    width: 17%;
+  }
+  .food3{
+    width: 20%;
+  }
+  #bad-food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2%;
+  }
+
+  #good-food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #space-img{
+    width: 10%;
+    height: 5%;
+    margin: 0 1vw;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  #mute-img{
+    width: 2vw;
+    user-select: none;
+    pointer-events: none;
+  }
+  #mute{
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid #000;
+    position: absolute;
+    left: 29%;
+    box-shadow: 0px 3px #000;
+    border-radius: 10000px;
+}  
+
+
+  #mute:hover{
+    border: 1px solid #000;
+    background-color: rgba(231, 117, 3, 0.509);
+    cursor: pointer;
+
+  }
+  #mute:active{
+    border: 1px solid #000;
+    background-color: rgba(189, 95, 1, 0.509);
+    box-shadow: 0px 0px #000;
+    transform: translateY(4px);
+  }
+
+  #bold-text{
+    font-size: 1.4rem;
+    font-weight:bold;
+    color: green;
+    text-align: center;
+  }
+
+  #highScore{
+    margin-left: 5%;
+  }
+
+  hr{
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    border-top: 2px dashed black;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  
